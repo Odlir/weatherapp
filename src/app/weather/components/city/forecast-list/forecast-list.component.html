@@ -1,0 +1,10 @@
+<div class="row">
+	<div *ngFor="let d of data" class="col-md-1 no-padds">
+		<span>{{d.date | date: 'EE'}}</span>
+		<span>
+			<img [src]="(d.day.condition.icon)?d.day.condition.icon:''" width="60" height="60" alt="">
+		</span>
+		<div *ngIf="tipo" class="temp-min">{{d.day.mintemp_c + "º  - " + d.day.maxtemp_c +"º"}}</div>
+		<div *ngIf="!tipo" class="temp-min">{{d.day.mintemp_f + "º  - " + d.day.maxtemp_f +"º"}}</div>
+	</div>
+</div>
