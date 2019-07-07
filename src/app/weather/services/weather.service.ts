@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class WeatherService {
 
-	public url: string = 'http://api.apixu.com/v1/current.json?key=8c3c7daa94234a59bd7140955182012&lang=es&q=';
-	public urlForecast: string = 'http://api.apixu.com/v1/forecast.json?key=8c3c7daa94234a59bd7140955182012&lang=es&days=7&q=​';
+	public url: string = 'https://api.apixu.com/v1/current.json?key=8c3c7daa94234a59bd7140955182012&lang=es&q=';
+	public urlForecast: string = 'https://api.apixu.com/v1/forecast.json?key=8c3c7daa94234a59bd7140955182012&lang=es&days=7&q=​';
 	public urlLocation: string = 'https://ipinfo.io?token=819de932dff004';
 
 	constructor(private http: HttpClient) {
